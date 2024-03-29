@@ -12,9 +12,9 @@ const Page = () => {
       style={{ backgroundImage: "url(/bg.jpg)" }}
       className="h-screen w-screen flex items-center justify-center bg-cover bg-center"
     >
-      <div className="flex flex-col gap-20 max-w-[80%] text-center items-center">
+      <div className="flex flex-col gap-20 max-w-[80%] items-center">
         <div className="flex flex-col items-center gap-4">
-          <h1 className="font-semibold text-white text-[50px]">
+          <h1 className="font-semibold text-white md:text-[50px] text-[25px]">
             Skills{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500">
               {" "}
@@ -42,12 +42,14 @@ const Page = () => {
                 alt={skill.name}
                 width={skill.width}
                 height={skill.height}
+               
               />
             </SwiperSlide>
           ))}
         </Swiper>
         <Swiper
-          slidesPerView={5}
+       
+         slidesPerView={5}
           loop={true}
           autoplay={{
             delay: 0,
