@@ -5,7 +5,7 @@ const ContactForm = () => {
 
     const handleSubmit = (e:React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        // Handle form submission here, you can send the formData to a server or perform any other action
+        
         console.log('Form submitted:');
       };
  return (
